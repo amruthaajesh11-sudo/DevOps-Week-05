@@ -24,4 +24,10 @@ pipeline {
             }
         }
     }
+    stage('Validation') {
+    steps {
+        echo 'Validating the application...'
+        sh 'python3 -c "from app import add; assert add(2, 3) == 5"'
+    }
+}
 }
