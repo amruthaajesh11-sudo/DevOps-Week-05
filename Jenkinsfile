@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the application...'
-                sh 'python3 app.py'
+                sh 'python3 wrong_file.py'
             }
         }
 
